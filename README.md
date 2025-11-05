@@ -126,7 +126,7 @@ import sqlite3
 import pandas as pd
 
 conn = sqlite3.connect("data/ny_weather.db")
-query = "SELECT year, avg_temp, total_precip FROM Weather_data WHERE year >= 2000;"
+query = "SELECT date, station, MAX(value) AS max_temp, year FROM {TABLE_NAME} WHERE datatype = 'TMAX' GROUP BY station ORDER BY station;"
 df = pd.read_sql(query, conn)
 conn.close()
 
