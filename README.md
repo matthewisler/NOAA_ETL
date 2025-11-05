@@ -59,7 +59,7 @@ etl_noaa/
 ├── etl_noaa.py # Main ETL script
 ├── average_temp_ny_graph.png
 ├── code_log.txt
-├── new_york_weather_1974_2024.csv
+├── new_york_weather_top_1000.csv # File too large, here is the first 1000 rows
 ├── ny_annual_climate_summary.csv
 ├── ny_station_summary.csv
 ├── ny_weather.db
